@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #fff;
+}
+
+.header{
+    background: linear-gradient(#323232, #2e2e2e);
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.header .navlink img{
+    height: 3vh;
+}
+
+.icon{
+    display: none;
+}
+
+.navlink{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+}
+
+.navlink a:hover, .navlink i:hover{
+    color: #838383;
+}
+
+#active{
+    color: #838383;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 19%;
+}
+
+.signintext{
+    font-size: 40px;
+    font-weight: 400;
+    color: #000;
+    padding: 40px 0;
+}
+
+.link{
+    color: blue;
+    cursor: pointer;
+}
+
+.username, .password{
+    padding: 15px 22px;
+    border: 1px solid #c4c5c5;
+    border-radius: 5px;
+    color: #000;
+    outline: none;
+}
+
+.button{
+    padding: 15px 22px;
+    font-size: 17px;
+    background: linear-gradient(#409feb,#0775cd);
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background: linear-gradient(#59abee,#2780c9);
+}
+
+.username, .password, .text, .link, .button{
+    margin: 10px 0;
+}
+
+.text{
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.call{
+    position: absolute;
+    bottom: 3vh;
+    width: 100%;
+    border-top: 1px solid #5f5f5f;
+}
+
+.call p{
+    color: #000;
+    margin-left: 19%;
+    padding: 20px 0;
+    font-weight: 400;
+}
+
+.call a{
+    color: blue;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1023px){
+    
+    .header{
+        height: 5vh;
+    }
+
+    .header .navlink img{
+        height: 25px;
+    }
+
+    .navlink{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .icon{
+        display: block;
+        font-size: 18px;
+    }
+
+    .list{
+        display: none;
+    }
+
+    .form{
+        width: 80%;
+        margin: auto;
+    }
+
+    .signintext{
+        padding: 20px 0;
+    }
+
+    .link{
+        font-size: 13px;
+        margin-bottom: 0px;
+        margin-top: 2px;
+    }
+
+    .text{
+        font-size: 13px;
+    }
+
+    .call p{
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
